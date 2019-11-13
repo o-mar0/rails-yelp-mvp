@@ -1,0 +1,9 @@
+<div class="container d-flex">
+  <div class="content justify_content_center ">
+    <h1>Restaurants</h1>
+    <% @restaurants.each do |restaurant| %>
+    <%= restaurant.name 'at' restaurant.address, 'has:' restaurant.rating %>
+    <% end %>
+
+  </div>
+</div>
